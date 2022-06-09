@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    int x, y, z;
+    z = 0;
+    printf("Digite dois numeros inteiros: \n");
+    scanf("%d", &x);
+    scanf("%d", &y);
+
+    if(x <= y){
+        z = y % x;
+    }
+    else{
+        z = x % y;
+    }
+    //printf("%d", z);
+    if(z == 0){
+        printf("Sao multiplos ");
+    }
+    else{
+        printf("Nao sao multiplos ");
+    }
+    return 0;
+}
